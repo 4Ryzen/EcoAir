@@ -39,3 +39,4 @@ if(document.getElementById("dash")){
   hist.unshift(r);if(hist.length>8)hist.pop();
   document.getElementById("hist").innerHTML=hist.map(x=>`<tr><td>${x.h}</td><td>${x.pm25.toFixed(1)}</td><td>${x.pm10.toFixed(1)}</td><td>${x.no2.toFixed(1)}</td><td>${x.co.toFixed(1)}</td></tr>`).join("")}
  tick();setInterval(tick,4000)}}
+const ac=document.getElementById("acoes");if(ac&&user)ac.remove();
