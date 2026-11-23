@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard | EcoAir</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header id="topo"></header><main>
+<div id="dash"><div class="top"><h1 id="ola" style="font-size:2rem">Dashboard</h1><span id="status" class="status">-</span></div>
+<div class="grid"><div class="box"><h2>Leituras atuais</h2><div id="medidas"></div><p style="font-size:.85rem">Atualiza a cada 4 segundos. Dados de demonstração.</p></div>
+<div class="box"><h2>Local do sensor</h2><label for="local">Nome do local</label><input id="local" placeholder="Ex.: Sala 2, Escola Central"><p style="font-size:.9rem">Verde: dentro do limite. Amarelo: perto do limite. Vermelho: acima.</p></div></div>
+<h2>Últimas leituras</h2><div class="wrap"><table><thead><tr><th>Hora</th><th>PM2.5</th><th>PM10</th><th>NO₂</th><th>CO</th></tr></thead><tbody id="hist"></tbody></table></div></div>
+</main><footer id="rodape"></footer><script src="js/app.js"></script></body></html>
